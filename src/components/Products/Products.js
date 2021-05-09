@@ -6,6 +6,7 @@ import {fetchProducts} from '../../store/actions/productActions';
 import { addToCart } from '../../store/actions/cartActions';
 import { Link } from 'react-router-dom';
 import debounce from 'lodash/debounce';
+import Rating from '../Rating';
 
 class Products extends Component{
     constructor(props){
@@ -62,6 +63,9 @@ class Products extends Component{
                                 
                                 <div className={classes.productDetails}>
                                 <p>{product.title}</p> 
+                                <Rating 
+                                  rating={product.rating}>
+                                 </Rating>
                                 <div className={classes.productPrice}>
                                     Price:${product.price}
                                 </div>

@@ -1,7 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import data from '../data';
-// import Rating from '../components/Rating';
+
 import { addToCart } from '../../store/actions/cartActions';
 import { connect } from 'react-redux';
 import classes from './Products.module.css';

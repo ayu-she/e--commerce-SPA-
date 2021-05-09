@@ -39,8 +39,10 @@
     padding:4%  10%;
   }
   .content img{
-    height: 50vh;
-    margin-right: 2%;
+   width:15rem;
+   height: 20rem;
+    margin-right: 20%;
+    padding-right: 30%;
   }
 
 .imgDiv{
