@@ -1,0 +1,10 @@
+.navbar{
+    position: fixed;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a{
+    color: black;
+}

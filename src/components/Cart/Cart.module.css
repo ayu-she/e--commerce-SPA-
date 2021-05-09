@@ -1,0 +1,95 @@
+.cartItems {
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+.cartItems img{
+    width: 5rem;
+}
+
+.cartItems li {
+    display: flex;
+}
+.cartItems li div{
+    padding: .5rem;
+}
+
+.cartItems li div:last-child{
+    flex: 1;
+}
+
+.form{
+    width: 60%;
+    height: 80vh;
+    border-right: 1px solid gainsboro;
+}
+
+
+.right{
+    text-align: right;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.total >div{
+    flex: 1;
+} 
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 4%;
+}
+
+.checkoutForm li{
+    list-style-type: none;
+    margin-top: 1%;
+    padding: 2%;
+    width: 100%;
+    
+}
+
+.checkoutForm{
+    align-items: center;
+    list-style-type: none;
+    border-radius: 2%;
+    width: 80%;
+    justify-items: start;
+}
+.div{
+    display: flex;
+    justify-content: space-between;
+}
+.checkoutForm input{
+    width: 100%;
+    border-radius: 1%;
+    border-color: gainsboro;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.table{
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.summary{
+    width: 50vw;
+}
+@media (max-width:540px){
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+}

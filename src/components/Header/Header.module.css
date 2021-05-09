@@ -1,0 +1,48 @@
+header{
+    grid-area: header;
+    background-color: #203040;
+}
+.h4{
+    float: left;
+    margin-left: 1%;
+}
+.nav{
+    display: flex;
+    color: #fff;
+    justify-content: flex-end;
+}
+a{
+    text-decoration: none;
+    margin: 2%;
+    color:#fff;
+}
+a:hover{
+    color: teal;
+}
+.button{
+    color:thistle;
+    background-color: #203040;
+    visibility: visible;
+}
+h2{
+    text-align: center;
+}
+
+.input{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.cartBtn{
+    border: none;
+    background-color: none;
+}
+
+sub{
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 10%;
+    border-radius: 550%;
+    color: black;
+}
