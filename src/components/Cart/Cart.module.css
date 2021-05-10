@@ -81,6 +81,9 @@
     border: 1px solid black;
     margin: 0 auto;
     padding: 2%;
+    width: 80%;
+    
+    align-items: center;
 }
 
 .summary{

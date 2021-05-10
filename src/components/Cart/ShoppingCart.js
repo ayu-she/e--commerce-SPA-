@@ -1,5 +1,6 @@
 //cart Page
 
+import { matches } from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { removeFromcart, addToCart } from '../../store/actions/cartActions';
@@ -12,7 +13,8 @@ class ShoppingCart extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-        showCheckout: false
+        showCheckout: false,
+        total:null,
     };this.submitData = this.submitData.bind(this);
 }
 inputPassword = event => {
@@ -30,6 +32,17 @@ subTotal=this.props.cartItems.reduce((a,c) => a+ c.price * c.count , 0) ;
  
     render() {
       const { cartItems } = this.props;
+      // const {total} = this.state
+      // if(matches==="BOOTCAMP2021"){
+      //     this.setState({
+      //       total: this.subTotal*0.9
+      //     });
+      // }
+      // else{
+      //   this.setState({
+      //     total: this.subTotal
+      //   })
+      // }
       return (
         <div className={classes.wrapper}>
             <div>
@@ -90,7 +103,8 @@ subTotal=this.props.cartItems.reduce((a,c) => a+ c.price * c.count , 0) ;
                       <hr></hr>
                       <div className={classes.div}>
                           <div>Total</div>
-                          <div>{this.subTotal + 13}</div>
+                        
+                          <div>$ {this.subTotal + 13}</div>
                         </div>
                   </div>
                   </div>

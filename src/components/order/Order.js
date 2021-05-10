@@ -27,23 +27,31 @@ class Order extends Component {
                     <table className={classes.table}>
                       <tbody>
                         <tr>
-                          <td>Item</td>
+                          <td>Item: { " "}</td>
                           <td>{item.title}</td>
                         </tr>
                         <tr>
                           <td>Price: {" " }</td>
                           <td>${item.price} x {item.count}</td>
                         </tr>
-                        <tr>
-                          <td>Total</td>
-                          <td>${this.subTotal + 13}</td>
-                        </tr>
                         </tbody>
                       </table>
                   </li>
+                  
                 ))}
               </ul>
-            
+              <div className={classes.table}>
+              <tr >
+                          <td>Tax: {"  " }</td>
+                          <td>$13</td>
+                        </tr>
+              </div>
+              <div className={classes.table}>
+              <tr >
+                          <td>Total: {"  " }</td>
+                          <td>${this.subTotal + 13}</td>
+                        </tr>
+              </div>
             </div>
             <Link to="/"><button>Continue Shopping</button></Link>
       </div>

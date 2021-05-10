@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 
 class Header extends Component{
 
-
     render(){
         const { cartItems } = this.props;
         return (
@@ -18,7 +17,7 @@ class Header extends Component{
                     <a href="#">Help</a>
                     <a><div>
           {cartItems.length === 0 ? (
-            <a href='YourCart'>Cart</a>
+            <a href="/empty">Cart</a>
             ): (
             <a href='/YourCart' >Cart <sub>{cartItems.length}</sub>
                 </a>

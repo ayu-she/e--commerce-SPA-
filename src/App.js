@@ -12,6 +12,7 @@ import Order from './components/order/Order';
 import ProductScreen from './components/Products/ProductScreen';
 
 
+
 class App extends Component {
 
   
@@ -43,6 +44,7 @@ class App extends Component {
       <Route path="/payment"><Payment/> </Route>
       <Route path="/order"><Order/></Route>
       <Route path="/productScreen" component={ProductScreen}></Route> 
+      
       
   
       </Switch> 
